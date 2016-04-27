@@ -1,8 +1,8 @@
-package br.com.devandrepereira.springmvc.repositories;
+package br.com.devandrepereira.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import br.com.devandrepereira.springmvc.entities.User;
+import br.com.devandrepereira.entities.User;
 
 /**
  * @author Andre Pereira

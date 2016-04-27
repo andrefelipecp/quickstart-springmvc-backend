@@ -1,4 +1,4 @@
-package br.com.devandrepereira.springmvc.config;
+package br.com.devandrepereira.config;
 
 import java.util.Properties;
 
@@ -25,10 +25,10 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@ComponentScan(basePackages = { "br.com.devandrepereira.springmvc" }, excludeFilters = {
-		@ComponentScan.Filter(pattern= "br.com.devandrepereira.springmvc.web.*", type = FilterType.REGEX)})
+@ComponentScan(basePackages = { "br.com.devandrepereira" }, excludeFilters = {
+		@ComponentScan.Filter(pattern= "br.com.devandrepereira.controller.*", type = FilterType.REGEX)})
 @EnableAspectJAutoProxy
-@EnableJpaRepositories(basePackages = { "br.com.devandrepereira.springmvc.repositories" })
+@EnableJpaRepositories(basePackages = { "br.com.devandrepereira.repositories" })
 @EnableTransactionManagement
 @PropertySource(value = { "classpath:application.properties" })
 public class AppConfig
@@ -61,7 +61,7 @@ public class AppConfig
 
 		factory.setDataSource(dataSource());
 		factory.setJpaVendorAdapter(vendorAdapter);
-		factory.setPackagesToScan("br.com.devandrepereira.springmvc.entities");
+		factory.setPackagesToScan("br.com.devandrepereira.entities");
 
 		Properties jpaProperties = new Properties();
 		jpaProperties.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.devandrepereira.springmvc.config;
+package br.com.devandrepereira.config;
 
 import javax.annotation.PostConstruct;
 
@@ -11,8 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import br.com.devandrepereira.springmvc.entities.User;
-import br.com.devandrepereira.springmvc.services.UserService;
+import br.com.devandrepereira.entities.User;
+import br.com.devandrepereira.services.UserService;
 
 /**
  * @author Andre Pereira

@@ -1,4 +1,4 @@
-package br.com.devandrepereira.springmvc.services;
+package br.com.devandrepereira.services;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.devandrepereira.springmvc.entities.User;
-import br.com.devandrepereira.springmvc.repositories.UserRepository;
+import br.com.devandrepereira.entities.User;
+import br.com.devandrepereira.repositories.UserRepository;
 
 /**
  * @author Andre Pereira

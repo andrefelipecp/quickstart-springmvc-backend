@@ -1,11 +1,11 @@
-package br.com.devandrepereira.springmvc.web.config;
+package br.com.devandrepereira.web.config;
 
 import javax.servlet.Filter;
 
 import org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import br.com.devandrepereira.springmvc.config.AppConfig;
+import br.com.devandrepereira.config.AppConfig;
 
 /**
  * @author Andre Pereira

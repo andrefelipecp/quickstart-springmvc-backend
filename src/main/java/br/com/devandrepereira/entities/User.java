@@ -1,4 +1,4 @@
-package br.com.devandrepereira.springmvc.entities;
+package br.com.devandrepereira.entities;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package br.com.devandrepereira.springmvc.web.config;
+package br.com.devandrepereira.web.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -16,7 +16,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
  * 
  */
 @Configuration
-@ComponentScan(basePackages = { "br.com.devandrepereira.springmvc.web" })
+@ComponentScan(basePackages = { "br.com.devandrepereira.controller" })
 @EnableWebMvc
 public class WebMvcConfig extends WebMvcConfigurerAdapter
 {
